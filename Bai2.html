@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Bai2.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <p>Today</p>
+            </div>
+            <div class="card-body">
+                <input type="number" id="Nhap" placeholder="Hãy nhập vào">
+                <br>
+                <br>
+                Kết Quả:<p id="demo"></p>
+                <button onclick="test()">OK</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function test() {
+            var day = document.getElementById("Nhap").value;
+
+            switch (parseInt(day)) {
+                case 2:
+                    document.getElementById("demo").innerHTML = "Thu Hai";
+                    document.getElementById("demo").style.background = "red"
+
+                    break;
+                case 3:
+                    document.getElementById("demo").innerHTML = "Thu Ba";
+                    document.getElementById("demo").style.background = "yellow"
+
+                    break;
+                case 4:
+                    document.getElementById("demo").innerHTML = "Thu Tu";
+                    document.getElementById("demo").style.background = "blue"
+
+                    break;
+
+                case 5:
+                    document.getElementById("demo").innerHTML = "Thu Nam";
+                    document.getElementById("demo").style.background = "green"
+
+                    break;
+
+                case 6:
+                    document.getElementById("demo").innerHTML = "Thu Sau";
+                    document.getElementById("demo").style.background = "purple"
+
+                    break;
+
+                case 7:
+                    document.getElementById("demo").innerHTML = "Thu Bay";
+                    document.getElementById("demo").style.background = "orange"
+
+                    break;
+                case 9:
+                    document.getElementById("demo").innerHTML = "Chu Nhat";
+                    document.getElementById("demo").style.background = "pink"
+
+                    break;
+
+                default:
+                    document.getElementById("demo").innerHTML = "Bạn hãy nhập lại từ 2->7";
+                    document.getElementById("demo").style.background = "red"
+
+                    break;
+            }
+        }
+    </script>
+</body>
+
+</html>

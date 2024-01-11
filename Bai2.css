@@ -1,0 +1,11 @@
+.card {
+text-align: center;
+}
+.card-header {
+font-size: 30px;
+}
+.card-body .p{
+font-size: 30px;
+color: red;
+background: #d4ff00;
+}

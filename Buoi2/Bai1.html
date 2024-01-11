@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <div class="card">
+        <div class="card-header">
+            <p>Bạn hãy click vào</p>
+        </div>
+        <div class="card-body">
+            <input type="number" id="Nhap" placeholder="Hãy nhập vào">
+                <button onclick="myclick()">Click</button>
+                <p id="demo" ></p>
+        </div>
+    </div>
+</div>
+
+<script>
+  function myclick() {
+    var number = document.getElementById("Nhap").value;
+    var greeting;
+    if (number==0) {
+        greeting = "Ban duoc 0 diem";
+    } else if (number>0)
+    {
+        greeting = "Do la so duong";
+    }
+    else
+    {
+        greeting = "Day la so am";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+}
+
+</script>
+</body>
+</html>
